@@ -8,9 +8,9 @@ data:extend{{
     name = "rt-open-gui",
     associated_control_input = "rt_open_gui",
     action = "lua",
-    icon = "__recipe-tweaker__/graphics/shortcut-x56.png",
+    icon = "__recipe-tweaker_fx__/graphics/shortcut-x56.png",
     icon_size = 56,
-    small_icon = "__recipe-tweaker__/graphics/shortcut-x24.png",
+    small_icon = "__recipe-tweaker_fx__/graphics/shortcut-x24.png",
     small_icon_size = 24,
 }}
 
