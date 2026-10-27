@@ -5,7 +5,7 @@
   "author": "_CodeGreen",
   "contact": "https://discord.gg/xNpBP6gzgK",
   "description": "Make changes to any number of recipes, export/copy the exchange string, and paste it into the startup setting to see them take effect. (Ctrl + \\)",
-  "factorio_version": "2.0",
+  "factorio_version": "2.1",
   "dependencies": [
     "! recipe-tweaker",
     "glib",

@@ -229,16 +229,16 @@ for name, tweak in pairs(tweaks) do
         original[k] = original_value
     end
 
-    if (not recipe.category) or recipe.category == "crafting" then
+    if (not recipe.categories) or recipe.categories and recipe.categories[1] == "crafting" then
         for _, ingredient in pairs(recipe.ingredients or {}) do
             if ingredient.type == "fluid" then
-                recipe.category = "crafting-with-fluid"
+                recipe.categories = {"crafting-with-fluid"}
                 goto ifbreak
             end
         end
         for _, result in pairs(recipe.results or {}) do
             if result.type == "fluid" then
-                recipe.category = "crafting-with-fluid"
+                recipe.categories = {"crafting-with-fluid"}
                 goto ifbreak
 
             end

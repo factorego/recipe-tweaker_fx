@@ -175,6 +175,10 @@ function utils.diff_tweak(refs)
     local ae = recipe.allowed_effects or {}
     local spoilage = refs.spoilage
     local preserve, fresh, reset = "preserve_products_in_machine_output", "result_is_always_fresh", "reset_freshness_on_craft"
+    local function proto_field(r, k)
+        local ok, v = pcall(function() return r[k] end)
+        return ok and v or nil
+    end
     return {
         energy = diff_value(tonumber(refs.energy.label.tags.value), original.energy or recipe.energy),
         max_productivity = diff_value(get_number_value(refs.max_productivity, 0.01), original.max_productivity or recipe.maximum_productivity),
@@ -183,9 +187,9 @@ function utils.diff_tweak(refs)
         consumption = diff_value(me.consumption.state, original.consumption or ae.consumption),
         pollution = diff_value(me.pollution.state, original.pollution or ae.pollution),
         quality = diff_value(me._quality.state, original.quality or ae.quality),
-        [preserve] = diff_value(spoilage[preserve].state, original[preserve] or recipe[preserve]),
-        [fresh] = diff_value(spoilage[fresh].state, original[fresh] or recipe[fresh]),
-        [reset] = diff_value(spoilage[reset].state, original[reset] or recipe[reset]),
+        [preserve] = diff_value(spoilage[preserve].state, original[preserve] or proto_field(recipe, preserve) or false),
+        [fresh] = diff_value(spoilage[fresh].state, original[fresh] or proto_field(recipe, fresh) or false),
+        [reset] = diff_value(spoilage[reset].state, original[reset] or proto_field(recipe, reset) or false),
         ingredients = ingredients_diff,
         products = products_diff,
     }
