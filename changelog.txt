@@ -1,0 +1,145 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.1.13
+Date: 2026-05-11
+  Features:
+    - Added ability to edit maximum productivity
+  Compatibility:
+    - Added load order dependency to Aquilo Overhaul: Lithium Battery
+    - Added load order dependency to Fluid recycler
+---------------------------------------------------------------------------------------------------
+Version: 0.1.12
+Date: 2025-12-15
+  Compatibility:
+    - Added load order dependency to Planetaris: Hyarion
+---------------------------------------------------------------------------------------------------
+Version: 0.1.11
+Date: 2025-11-24
+  Bugfixes:
+    - Fixed crash with existing min/max products
+---------------------------------------------------------------------------------------------------
+Version: 0.1.10
+Date: 2025-11-16
+  Bugfixes:
+    - Fixed changing existing tweaks reverting existing changes
+---------------------------------------------------------------------------------------------------
+Version: 0.1.9
+Date: 2025-11-13
+  Bugfixes:
+    - Fixed incorrect result removal logic
+---------------------------------------------------------------------------------------------------
+Version: 0.1.8
+Date: 2025-11-10
+  Bugfixes:
+    - Removed research-progress
+    - Fixed recipes with decimal item result amounts being displayed incorrectly
+  Compatibility:
+    - Added load order dependency to Krastorio 2 Spaced Out
+---------------------------------------------------------------------------------------------------
+Version: 0.1.7
+Date: 2025-10-24
+  Bugfixes:
+    - Fixed issue with ingredient/product removal order
+---------------------------------------------------------------------------------------------------
+Version: 0.1.6
+Date: 2025-10-24
+  Bugfixes:
+    - Fixed error with glib update
+    - Fixed pin/close logic
+  Compatibility:
+    - Added load order dependency to Age of Production
+---------------------------------------------------------------------------------------------------
+Version: 0.1.5
+Date: 2025-08-18
+  Bugfixes:
+    - Fixed ingredient removal not working
+    - Fixed error when logging non-existent recipe
+    - Fixed probability confirm validation
+---------------------------------------------------------------------------------------------------
+Version: 0.1.4
+Date: 2025-08-17
+  Bugfixes:
+    - Fixed changing ingredient/product name not updating internally
+    - Fixed error with non-existent item type tables in data.raw
+    - Fixed crash with opening tweaks containing removed items after reload
+    - Fixed opening tweaks not displaying probability
+    - Fixed not being able to remove properties from ingredients/products
+---------------------------------------------------------------------------------------------------
+Version: 0.1.3
+Date: 2025-08-16
+  Bugfixes:
+    - Fixed ingredient removal not allowing confirm
+---------------------------------------------------------------------------------------------------
+Version: 0.1.2
+Date: 2025-08-16
+  Compatibility:
+    - More load order dependencies
+---------------------------------------------------------------------------------------------------
+Version: 0.1.1
+Date: 2025-08-16
+  Bugfixes:
+    - Fixed error on startup with invalid string, it now errors with a custom message instead
+  Compatibility:
+    - Added load order dependency to Vanilla Galore Continued
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 2025-08-16
+  Features:
+    - Updated to 2.0
+    - Rewrote the mod from the ground up
+    - Added support for new 2.0 properties such as allowed module effects and spoilage
+    - Pressing the open keybind while hovering over a recipe will open the tweak for that recipe
+  Changes:
+    - Tweak string format is different from 1.1, older strings will not load
+  Bugfixes:
+    - Now supports having recipes with multiple of the same product
+---------------------------------------------------------------------------------------------------
+Version: 0.0.10
+Date: 2024-08-06
+  Bugfixes:
+    - Added compatibility with grand-unified-factorio-theory
+---------------------------------------------------------------------------------------------------
+Version: 0.0.9
+Date: 2024-01-01
+  Changes:
+    - Added a scroll pane to the main frame for those with many recipe tweaks
+---------------------------------------------------------------------------------------------------
+Version: 0.0.8
+Date: 2023-11-05
+  Bugfixes:
+    - Fixed weird issues with amount_min in recipe product prototypes
+---------------------------------------------------------------------------------------------------
+Version: 0.0.7
+Date: 2023-10-20
+  Bugfixes:
+    - Added several hidden dependencies on large mods to fix load order issues
+---------------------------------------------------------------------------------------------------
+Version: 0.0.6
+Date: 2023-10-01
+  Bugfixes:
+    - Fixed missing localization for the keybind
+---------------------------------------------------------------------------------------------------
+Version: 0.0.5
+Date: 2023-09-18
+  Bugfixes:
+    - Fixed adding fluids to certain recipes causing a crash on startup
+---------------------------------------------------------------------------------------------------
+Version: 0.0.4
+Date: 2023-09-16
+  Features:
+    - Added hidden optional dependencies for some mods
+---------------------------------------------------------------------------------------------------
+Version: 0.0.3
+Date: 2023-09-16
+  Bugfixes:
+    - Fixed some changes not getting restored on load
+    - Removed debug print
+---------------------------------------------------------------------------------------------------
+Version: 0.0.2
+Date: 2023-08-25
+  Features:
+    - Added shortcut to open GUI
+---------------------------------------------------------------------------------------------------
+Version: 0.0.1
+Date: 2023-08-25
+  Features:
+    - Initial Release
